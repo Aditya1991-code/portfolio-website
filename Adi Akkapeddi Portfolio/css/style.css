@@ -6,21 +6,25 @@ font-weight: 900;
 
 h2 {
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'roboto';
 }
 
+h1 {
+  font-family: 'roboto';
+}
 h3 {
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'roboto';
+
 }
 
 .skills {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'roboto';
 }
 
 body {
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'roboto';
 }
 .adinav {
   background-color: blue;
@@ -54,3 +58,4 @@ body {
 .yellow {
   align-items: center;
 }
+

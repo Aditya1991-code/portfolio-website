@@ -1,3 +1,7 @@
+/* Color 1: #0000FF;
+   Color 2: #FFFFFF;
+   */
+
 .adititle {
 float: left;
 color: black;
@@ -85,17 +89,16 @@ body {
   transition: 0.2s opacity;
 }
 
-.a:focus {
+a:focus {
   color: azure;
   text-decoration: underline;
 }
 
-.a:active {
+a:active {
   color: #143a52;
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
-

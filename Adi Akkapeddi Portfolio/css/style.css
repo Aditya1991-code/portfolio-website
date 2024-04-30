@@ -19,7 +19,11 @@ h1 {
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
+  font-weight: 500;
+  padding-top: 2  0px;
+  padding-bottom: 20px;
+  padding-inline-start: 30px;
 
 }
 
@@ -116,7 +120,7 @@ img {
   float: left;
   height: 300px;
   width: 300px;
-   align-items: center;
+  align-items: center;
 }
 
 header {
@@ -129,6 +133,9 @@ header {
 .footer {
   background-color: blue;
   color: white;
+  text-align: center;
+  padding: 100px;
+  margin: 20px;
 }
 
 .email {
@@ -136,13 +143,42 @@ header {
 }
 
 .Row { 
-  padding-bottom: 25px; 
-  border-bottom: 1px solid #4a4a4a; }
-
+margin: 30px;
+width: 800px;
+height: 300px;
+align-items: center;
+justify-content: center;
+stroke: blue;
+color: white;
+}
   main {
-    padding-top: 30px;
+    padding-top: 130px;
   }
 
   .hero {
     background-color: #ffe4c4;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .container {
+    background: green;
+    padding: 15px;
+    padding-top: 2px;
+    padding-bottom: 60px;
+    line-height: 20px;
+  }
+  
+  .linkedin {
+    height: 100px;
+    width: 100px;
+    padding-left: 40px;
+  }
+
+  .instagram {
+    height: 100px;
+    width: 100px;
+    padding-left: 40px;
   }

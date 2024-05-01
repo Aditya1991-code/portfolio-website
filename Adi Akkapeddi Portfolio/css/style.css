@@ -23,7 +23,6 @@ h3 {
   font-weight: 500;
   padding-top: 2  0px;
   padding-bottom: 20px;
-  padding-inline-start: 30px;
 
 }
 
@@ -123,7 +122,7 @@ header {
   margin: 20px;
 }
 
-.footercontainer {
+.footer {
   background-color: blue;
   color: white;
   text-align: center;
@@ -135,22 +134,12 @@ header {
   color: white;
 }
 
-.Row { 
-margin: 30px;
-width: 800px;
-height: 300px;
-align-items: center;
-justify-content: center;
-stroke: blue;
-color: white;
-}
-
 main {
     padding-top: 130px;
   }
 
-  * {
-    box-sizing: border-box;
+.row {
+    margin: 25px 0; 
   }
 
 .hero {
@@ -161,7 +150,7 @@ main {
     text-align: center;
   }
 
-.yellowcontainer {
+.yellow {
     background: green;
     padding: 15px;
     padding-top: 2px;
@@ -181,4 +170,14 @@ main {
   .plutopaydescription {
    align-items: left;
    padding: 10px 20px;
+  }
+
+  .plutopaydescription h3 {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
   }

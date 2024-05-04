@@ -1,3 +1,15 @@
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
 /* Color 1: #0000FF;
    Color 2: #FFFFFF;
    */
@@ -10,6 +22,10 @@
   max-width: 450;
 }
 
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
 h2 {
   text-align: center;
 }
@@ -19,7 +35,7 @@ h1 {
 }
 
 h3 {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   padding-top: 2  0px;
   padding-bottom: 20px;
@@ -93,9 +109,7 @@ body {
 }
 
 .casestudybutton:hover {
-  display: inline-block;
-  background-color: white;
-  color: blue;
+  opacity: 0.8;
 }
 
 a {
@@ -117,7 +131,7 @@ img {
 
 header {
   background-color: blue;
-  text-align: center;
+  text-align: unset;
   padding: 20px;
   margin: 20px;
 }
@@ -166,7 +180,12 @@ main {
     height: 100px;
     width: 100px;
   }
-
+  .plutocolumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  }
   .plutopaydescription {
    align-items: left;
    padding: 10px 20px;
@@ -180,4 +199,33 @@ main {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+  }
+
+  .downloadresumebutton {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid blue;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  }
+
+  .downloadresumebutton:hover {
+    opacity: 0.8;
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  ul.a {
+    list-style-type: circle;
   }

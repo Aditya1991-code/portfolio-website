@@ -119,6 +119,10 @@ img {
   width: 100%;
 }
 
+.plutoimg {
+  width: 60%;
+}
+
 header {
   background-color: blue;
   text-align: unset;
@@ -155,7 +159,6 @@ main {
   }
 
 .yellow {
-    background: green;
     padding: 15px;
     padding-top: 2px;
     padding-bottom: 60px;
@@ -169,16 +172,6 @@ main {
 .instagram {
     height: 100px;
     width: 100px;
-  }
-.plutocolumn {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px;
-  }
-  .plutopaydescription {
-   align-items: left;
-   padding: 10px 20px;
   }
 
   .plutopaydescription h3 {
@@ -234,6 +227,15 @@ Small devices (640px and larger)
 Medium devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   .col-md-1 {width: 8.33%;}
   .col-md-2 {width: 16.66%;}
   .col-md-3 {width: 25%;}

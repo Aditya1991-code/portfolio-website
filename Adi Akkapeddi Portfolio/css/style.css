@@ -123,6 +123,10 @@ img {
   width: 60%;
 }
 
+.adiimg {
+  width: 30%;
+}
+
 header {
   background-color: blue;
   text-align: unset;

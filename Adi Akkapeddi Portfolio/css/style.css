@@ -33,7 +33,6 @@ h3 {
 }
 
 body {
-  text-align: center;
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
@@ -119,17 +118,9 @@ img {
   width: 100%;
 }
 
-.plutoimg {
-  width: 60%;
-}
-
-.adiimg {
-  width: 30%;
-}
-
 header {
   background-color: blue;
-  text-align: unset;
+  text-align: center;
   padding: 20px;
   margin: 20px;
 }
@@ -213,6 +204,24 @@ main {
 Small devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  .adinav {
+    float: right;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .col-centered {
+    margin: 0 auto;
+    float: none;
+  }
 .col-sm-1 {width: 8.33%;}
 .col-sm-2 {width: 16.66%;}
 .col-sm-3 {width: 25%;}
@@ -231,15 +240,7 @@ Small devices (640px and larger)
 Medium devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  [class*="col-"] {
-    float: left;
-  }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
   .col-md-1 {width: 8.33%;}
   .col-md-2 {width: 16.66%;}
   .col-md-3 {width: 25%;}

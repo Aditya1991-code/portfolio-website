@@ -1,8 +1,8 @@
 console.log("Hi welcome to Adi Akkapeddi's profile")
 function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
+    var x = document.getElementById('adinavtoggle');
     if (x.className === 'adinavtoggle') {
-      x.className += 'responsive';
+      x.className += ' responsive';
     } else {
       x.className = 'adinavtoggle';
     }

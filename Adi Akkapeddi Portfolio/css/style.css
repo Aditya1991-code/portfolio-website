@@ -9,7 +9,7 @@
   text-transform: uppercase;
   font-weight: 700;
   color: white ;
-  max-width: 450;
+  float: left;
 }
 
 h1, h2, h3, h4 {
@@ -42,10 +42,8 @@ body {
 /* Header styles */
 
 .adinav {
-  background-color: blue;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 .adinav a{
   color: white;
   font-size: 15px;
@@ -54,22 +52,18 @@ body {
   display: block;
   text-align: center;
 }
-
 .adinav ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
 }
-
 .adinav li:hover {
   background-color: rgb(223, 223, 223);
 }
-
-.adinav > ul > li {
-  display: inline-block;
+.adinav li:not(:last-child) {
+  display: none;
 }
-
 .adinav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -79,7 +73,29 @@ body {
 .adinav li {
   display: inline-block;
 }
-
+.adinav, .adinav.responsive {
+  position: relative;
+}
+.adinav.responsive {
+  display: block;
+}
+nav.adinav.responsive {
+  padding: 24px 0 0;
+}
+.adinav.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.adinav.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.adinav li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
 .yellow {
   align-items: center;
 }
@@ -123,6 +139,7 @@ header {
   text-align: center;
   padding: 20px;
   margin: 20px;
+  overflow: hidden;
 }
 
 .footer {
@@ -138,7 +155,7 @@ header {
 }
 
 main {
-    padding-top: 130px;
+    padding-top: 20px;
   }
 
 .row {
@@ -234,8 +251,30 @@ Small devices (640px and larger)
   header {
     text-align: unset;
   }
+  main {
+    padding-top: 120px;
+  }
   .adinav {
     float: right;
+  }
+  .adinav > ul > li {
+    display: inline-block;
+  }
+  .adinav li:not(:last-child) {
+    display: inline-block;
+  }
+  .adinav li:last-child {
+    display: none;
+  }
+  nav.adinav.responsive {
+    padding: 0;
+  }
+  .adinav.responsive li  {
+    padding: 10px 0;
+    border-top: none;
+  }
+  .adinav.responsive li:last-child  {
+    padding: 0;
   }
   [class*="col-"] {
     float: left;
